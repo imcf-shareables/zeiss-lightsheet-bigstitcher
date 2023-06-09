@@ -43,11 +43,11 @@ couple of options are then available:
 * *fuse images*: The fusion step takes a while so we added this as an optional
   step.
 * *convert to IMS5*: This only works if you have Imaris installed in `C:\Program
-  Files\Bitplane`
-* *delete intermediate files*: If activated, will only keep on disk the H5/XML
-  and the IMS file, preferred unticked
+  Files\Bitplane`.
+* *delete intermediate files*: If activated, will only keep the H5/XML
+  and the IMS file on disk (preferred unticked).
 * *send email*: Will only work inside the University of Basel network but could
-  be adapted to your need
+  be adapted to your needs.
 
 ### Runtime
 
