@@ -5,18 +5,25 @@
 ## Description
 
 This script allows to do the whole pipeline for processing and fusing tiled CZI
-files coming from a Zeiss LightSheet 7 microscope.
+files coming from a Zeiss LightSheet 7 (*LS7*) microscope.
 
 ## Requirements
 
-The script is made in Python and requires
-[Fiji](https://doi.org/10.1038/nmeth.2019) to be ran. On top of this, it
-requires a specific version of the multiview-reconstruction plugin in order to
-fix the LS7 reader. This has now been integrated in more recent version of the
-plugin but the script hasn't yet been updated to reflect these changes.
+The script is made in Python and requires [Fiji][1] to be ran. On top of this,
+it requires a modified version of the [multiview-reconstruction][2] (*MVR*)
+plugin in order to fix the LS7 reader. A pre-built `.jar` ready to be used is
+provided alongside with the script in this repo.
 
-Once activated, just drag and drop the script in the main Fiji window and click
-on the RUN button.
+*Please note: these modifications have been integrated into the upstream code of
+the MVR plugin but our script has not yet been updated to reflect these changes.
+We are publishing it here in order to provide reproducibility of the analysis
+done while the upstream MVR code did not yet include the changes.*
+
+To activate / use the modified MVR plugin, simply delete the
+`multiview-reconstruction-*.jar` from your Fiji's `jars/` folder and place the
+`.jar` provided in this repo there instead, then (re-) start Fiji. Once
+activated, just drag and drop the script in the main Fiji window and click on
+the RUN button.
 
 As Fiji is operating system independant, this can be run on Windows, Mac and
 Linux. No specific hardware is necessary and script should take a couple of
@@ -58,3 +65,6 @@ The script will then go through the different steps of the pipeline:
 The script will save the resulting files next to the CZI and intermediate files
 in subfolders. A .txt file will also be saved with the log of the whole
 pipeline.
+
+[1]: https://doi.org/10.1038/nmeth.2019
+[2]: https://github.com/PreibischLab/multiview-reconstruction
