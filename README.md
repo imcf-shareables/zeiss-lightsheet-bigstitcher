@@ -39,8 +39,7 @@ couple of options are then available:
 * *reader to use*: This is necessary with the modified JAR as the LS7 reader had
   to be revert engineered to work due to some metadata changes after the
   microscope upgrade.
-* *best illumination side*: See documentation
-  [here](https://imagej.net/plugins/bigstitcher/select-illumination).
+* *best illumination side*: See the [bigstitcher documentation][3] for details.
 * *fuse images*: The fusion step takes a while so we added this as an optional
   step.
 * *convert to IMS5*: This only works if you have Imaris installed in `C:\Program
@@ -68,3 +67,4 @@ pipeline.
 
 [1]: https://doi.org/10.1038/nmeth.2019
 [2]: https://github.com/PreibischLab/multiview-reconstruction
+[3]: https://imagej.net/plugins/bigstitcher/select-illumination
