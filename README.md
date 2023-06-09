@@ -14,10 +14,11 @@ it requires a modified version of the [multiview-reconstruction][2] (*MVR*)
 plugin in order to fix the LS7 reader. A pre-built `.jar` ready to be used is
 provided alongside with the script in this repo.
 
-*Please note: these modifications have been integrated into the upstream code of
-the MVR plugin but our script has not yet been updated to reflect these changes.
-We are publishing it here in order to provide reproducibility of the analysis
-done while the upstream MVR code did not yet include the changes.*
+*Please note: [our modifications to the MVR plugin][4] have been integrated into
+the upstream code in the meantime, but our script has not yet been updated to
+reflect these changes. We are publishing it here in order to provide
+reproducibility of the analysis done while the upstream MVR code did not yet
+include the changes.*
 
 To activate / use the modified MVR plugin, simply delete the
 `multiview-reconstruction-*.jar` from your Fiji's `jars/` folder and place the
@@ -68,3 +69,4 @@ pipeline.
 [1]: https://doi.org/10.1038/nmeth.2019
 [2]: https://github.com/PreibischLab/multiview-reconstruction
 [3]: https://imagej.net/plugins/bigstitcher/select-illumination
+[4]: https://github.com/lguerard/multiview-reconstruction
