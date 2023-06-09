@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8019805.svg)](https://doi.org/10.5281/zenodo.8019805)
+
 # zeiss-lightsheet-bigstitcher
 
 ## Description
